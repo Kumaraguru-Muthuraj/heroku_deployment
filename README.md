@@ -1,2 +1,2 @@
 # deploy-heroku
-Deploy an Image Classification Model on Heroku
+Deploy an Item Recommender System on Heroku
