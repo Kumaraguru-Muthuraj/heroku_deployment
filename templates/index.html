@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html >
+<body  align="center" style="background-color:white;">
+<head>
+  <meta charset="UTF-8">
+  <title>EBuss Item Recommendation System</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <style>
+      body {
+        font-family: 'Tangerine', serif;
+        font-size: 28px;
+      }
+    </style>
+</head>
+
+<body>
+ <div class="login">
+	<h2 style="text-align:center">EBuss Item Recommendation System</h2>
+
+    <form align="center" action="{{ url_for('predict')}}" method="post">
+        <h3>Enter user name</h3>
+    	<input type="text" style="text-align:center" name="user_name" placeholder="user_name" required="required" />
+        <br>
+        <button align="center" type="submit" class="btn btn-primary btn-block btn-large">Get top 5 recommended items</button>
+    </form>
+
+   <br>
+   <br>
+     {{ items_list }}
+
+ </div>
+
+
+</body>
+</html>
