@@ -1,17 +1,10 @@
 from __future__ import division, print_function
 
-# coding=utf-8
-import sys
-import os
-import glob
-import re
 import numpy as np
 import pandas as pd
 
 # Flask utils
 from flask import Flask, redirect, url_for, request, render_template, jsonify
-from werkzeug.utils import secure_filename
-from gevent.pywsgi import WSGIServer
 
 # importing required modules
 from zipfile import ZipFile
